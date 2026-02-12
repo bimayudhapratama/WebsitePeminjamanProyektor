@@ -1,0 +1,33 @@
+{
+  "roles": {
+    "admin": {
+      "label": "Admin",
+      "dashboard": "admin/index.php",
+      "permissions": ["read", "create", "update", "delete"]
+    }
+  },
+  "modules": {
+    "dashboard": {
+      "label": "Dashboard",
+      "allowed_roles": ["admin", "penyewa"]
+    },
+    "sewaProyektor": {
+      "label": "Peminjaman Proyektor",
+      "allowed_roles": ["admin", "penyewa"]
+    }
+        ,"pinjam": {
+      "label": "Pinjam Proyektor",
+      "allowed_roles": ["admin", "penyewa"]
+    }
+    ,"tambahStok": {
+      "label": "Tambah Proyektor",
+      "allowed_roles": ["admin", "penyewa"]
+    }
+    ,"peminjam": {
+      "label": "Daftar Peminjam",
+      "allowed_roles": ["admin", "penyewa"]
+    }
+    
+  }
+  
+}
